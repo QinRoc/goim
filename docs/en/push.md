@@ -2,6 +2,7 @@
 push HTTP interface protocols for pusher
 
 <h3>Interfaces</h3>
+
 | Name | URL | HTTP method |
 | :---- | :---- | :---- |
 | [single push](#single push)  | /1/push       | POST |
