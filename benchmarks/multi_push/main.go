@@ -30,6 +30,7 @@ type pushsBodyMsg struct {
 	UserIds []int64         `json:"u"`
 }
 
+// 初始化类成员变量
 func init() {
 	httpTransport := &http.Transport{
 		Dial: func(netw, addr string) (net.Conn, error) {
@@ -51,6 +52,8 @@ func init() {
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
+
+	// 打开log
 	infoLogfi, err := os.OpenFile("./multi_push.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
 	if err != nil {
 		panic(err)
@@ -61,6 +64,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	
 	length, err := strconv.Atoi(os.Args[2])
 	if err != nil {
 		panic(err)

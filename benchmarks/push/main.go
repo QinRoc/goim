@@ -1,7 +1,10 @@
 package main
 
 // Start Command eg : ./push 0 20000 localhost:7172 60
-
+// param 1 : the start of  number
+// param 2 : the end of  number
+// param 3 : comet server tcp address
+// param 4 : push amount each goroutines per second
 import (
 	"bytes"
 	"encoding/json"
