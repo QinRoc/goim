@@ -1,5 +1,7 @@
 package main
 
+// 多room推送
+
 // Start Command eg : ./push_rooms 0 20000 localhost:7172 40
 // param 1 : the start of room number
 // param 2 : the end of room number

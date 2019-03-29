@@ -1,4 +1,5 @@
 package main
+// 单Room推送
 
 // Start Commond eg: ./push_room 1 20 localhost:3111
 // first parameter: room id
