@@ -15,7 +15,7 @@ ServerErr = -500
 ### push keys
 [POST] /goim/push/keys
 
-| Name            | Type     | Remork                 |
+| Name            | Type     | Remark                 |
 |:----------------|:--------:|:-----------------------|
 | [url]:operation | int32    | operation for response |
 | [url]:keys      | []string | multiple client keys   |
@@ -31,7 +31,7 @@ response:
 ### push mids
 [POST] /goim/push/mids
 
-| Name            | Type     | Remork                 |
+| Name            | Type     | Remark                 |
 |:----------------|:--------:|:-----------------------|
 | [url]:operation | int32    | operation for response |
 | [url]:mids      | []int64  | multiple user mids     |
@@ -47,7 +47,7 @@ response:
 ### push room
 [POST] /goim/push/room
 
-| Name            | Type     | Remork                 |
+| Name            | Type     | Remark                 |
 |:----------------|:--------:|:-----------------------|
 | [url]:operation | int32    | operation for response |
 | [url]:type      | string   | room type              |
@@ -64,7 +64,7 @@ response:
 ### push all
 [POST] /goim/push/all
 
-| Name            | Type     | Remork                 |
+| Name            | Type     | Remark                 |
 |:----------------|:--------:|:-----------------------|
 | [url]:operation | int32    | operation for response |
 | [url]:speed     | int32    | push speed             |
@@ -80,7 +80,7 @@ response:
 ### online top
 [GET] /goim/online/top
 
-| Name    | Type     | Remork                 |
+| Name    | Type     | Remark                 |
 |:--------|:--------:|:-----------------------|
 | type    | string   | room type              |
 | limit   | string   | online limit           |
@@ -110,7 +110,7 @@ response:
 ### online room
 [GET] /goim/online/room
 
-| Name    | Type     | Remork                 |
+| Name    | Type     | Remark                 |
 |:--------|:--------:|:-----------------------|
 | type    | string   | room type              |
 | rooms   | []string | room ids               |
@@ -145,7 +145,7 @@ response:
 ### nodes weighted
 [GET] /goim/nodes/weighted
 
-| Name     | Type     | Remork                 |
+| Name     | Type     | Remark                 |
 |:---------|:--------:|:-----------------------|
 | platform | string   | web/android/ios        |
 
@@ -169,8 +169,7 @@ response:
             "base_delay": 3,
             "factor": 1.8,
             "jitter": 0.3
-        },
-        
+        }
     }
 }
 ```
